@@ -1,3 +1,6 @@
+<?php
+include("./database/dbconnect.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,18 +12,28 @@
 <body>
   <form action="login.php" method="post" class="w-full h-screen">
     <div class="flex justify-center text-center h-full items-center ">
-        <div class="shadow-lg shadow-gray-400 p-14">
-            <h2 class="text-blue-700 text-4xl font-clashDisplay font-bold ">Fish World</h2>
+        <div class="shadow-lg shadow-gray-400 p-14 rounded-xl xxxs:p-8 xxs:p-10 xs:p-14 sm:p-20 lg:p-36">
+            <h2 class="text-blue-700 text-4xl  font-clashDisplay font-bold xxxs:text-3xl xs:text-5xl sm:text-6xl">Fish World</h2>
             <br>
-            <input class="border-solid border border-blue-800 rounded py-2 pl-2 pr-28 mb-4 focus:outline-none
-             placeholder:text-blue-800 text-blue-800 placeholder:text-opacity-50" type="text" name="name" placeholder="Enter your name">
+            <input class="border-solid border-2 border-blue-700 rounded sm:py-3 py-2 pl-2  pr-28 
+            xxxs:pr-16 xxs:text-base xxxs:text-sm mb-4 focus:outline-none
+             placeholder:text-blue-800 text-blue-800 placeholder:text-opacity-50 
+             xxs:pr-20 xs:pr-28 sm:pr-52 lg:pr-72 lg:text-lg" type="text" name="name" placeholder="Enter your name">
             <br> 
-            <input class="border-solid border border-blue-800 rounded py-2 pl-2 pr-28 mb-4 focus:outline-none
-             placeholder:text-blue-800 text-blue-800 placeholder:text-opacity-50" type="text " type="password" name="password" id="" placeholder="Enter your password">
+            <input class="border-solid border-2 border-blue-700 rounded sm:py-3 py-2 pl-2  pr-28 
+            xxxs:pr-16 xxs:text-base xxxs:text-sm mb-4 focus:outline-none
+             placeholder:text-blue-800 text-blue-800 placeholder:text-opacity-50 
+             xxs:pr-20 xs:pr-28 sm:pr-52 lg:pr-72 lg:text-lg" type="text " type="password" name="password" id="" placeholder="Enter your password">
             <br>
 
-            <button class="bg-blue-800 text-white   py-2 px-32 rounded ">Login</button>
+            <button   class="bg-blue-700 text-white   py-2 px-32 xxxs:px-24 xxxs:text-sm  
+                    xxs:text-base rounded xxs:px-28 xs:px-32 sm:px-44 sm:text-lg lg:px-56 
+                    lg:text-xl ring-2 ring-blue-700 ring-offset-2 focus:bg-blue-700/95 mb-6"><a href="index.php">Login</a></button>
+                
+                    <p class="text-base xxxs:text-xs xxs:text-xs xs:text-sm sm:text-base lg:text-lg">If you don't have account <a href="" class="text-blue-800">Registar</a></p>
         </div>
+      
+        
     </div>
   </form>  
 </body>
